@@ -6,7 +6,7 @@
   "description": "...",
   "authors": [],
   "contact": {},
-  "license": "GPL-3.0-or-later",
+  "license": "LGPL-3.0-or-later",
   "icon": "assets/thedaemon/icon.png",
   "environment": "client",
   "entrypoints": {
