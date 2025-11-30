@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "thedaemon",
+  "version": "${version}",
+  "name": "The Daemon",
+  "description": "...",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/thedaemon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.sunnymonster.thedaemon.client.TheDaemonClient"
+    ],
+    "main": [
+      "dev.sunnymonster.thedaemon.TheDaemon"
+    ]
+  },
+  "mixins": [
+    "thedaemon.mixins.json",
+    {
+      "config": "thedaemon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
